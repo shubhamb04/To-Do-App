@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+  </head>
+  <body>
+    <main>
+      <section class="newItemEntry">
+        <form id="itemEntryForm">
+          <label for="newItem">Add new item to the list.</label>
+          <input
+            type="text"
+            id="newItem"
+            autocomplete="off"
+            placeholder="Add New Item"
+            tabindex="0"
+          />
+          <button
+            id="addItem"
+            class="button"
+            title="Add new item"
+            aria-label="Add new item to the list"
+            tabindex="0"
+          >
+            Add
+          </button>
+        </form>
+      </section>
+      <hr />
+      <section class="listItem">
+        <div class="item-container">
+          <h2>To Do List</h2>
+          <button
+            id="clearItem"
+            class="button"
+            title="clear the item"
+            aria-label="Remove all items from the list"
+            tabindex="0"
+          >
+            clear
+          </button>
+        </div>
+
+        <div id="listItem">
+          <div class="item">
+            <input type="checkbox" id="1" tabindex="0" /><label for="1"
+              >bread</label
+            >
+          </div>
+          <div class="item">
+            <input type="checkbox" id="1" tabindex="0" /><label for="1"
+              >milk</label
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

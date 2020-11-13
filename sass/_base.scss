@@ -1,0 +1,60 @@
+$default-font-color: #fff;
+$background-color: #273b09;
+$container-bg-color: #7b904b;
+$container-border-color: #000;
+$textbox-border-clr: #fff;
+$button-text-clr: #273b09;
+$button-hover-clr: #7b904b;
+$add-btn-clr: #efca08;
+$clear-btn-clr: #d2bf55;
+
+@mixin mq($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  color: $default-font-color;
+  width: 100%;
+  @include mq(768px) {
+    font-size: 1.6rem;
+  }
+}
+
+body {
+  padding: 1em;
+  background-color: $background-color;
+}
+
+section {
+  width: 90%;
+  margin: 1em auto;
+  padding: 1em;
+  max-width: 700px;
+  border-radius: 10px;
+  border: $container-border-color solid 1px;
+  background-color: $container-bg-color;
+  color: #000;
+}
+
+// input {
+//   padding: 0.5em;
+//   width: max-content;
+// }
+
+// .item-container {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+// }

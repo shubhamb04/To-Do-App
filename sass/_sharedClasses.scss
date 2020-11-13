@@ -1,0 +1,16 @@
+.button {
+  width: 15%;
+  min-width: 48px;
+  min-height: 48px;
+  color: $button-text-clr;
+  border: solid 1px $textbox-border-clr;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  background-color: $clear-btn-clr;
+}
+
+.button:active {
+  filter: brightness(120%);
+  box-shadow: 2px 2px 5px #000;
+}
